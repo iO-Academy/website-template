@@ -18,8 +18,6 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASES: false # Only check new/edited files
           LOG_LEVEL: NOTICE # Hide all the pointless output
-          VALIDATE_HTML: true
-          VALIDATE_CSS: true
-          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_PHP_PHPCS: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
